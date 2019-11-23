@@ -8,6 +8,9 @@
                 <div class="item">
                     <div class="image">
                         <img src="<%= blog.image %>">
+                        <div class="extra">
+                            <a class="ui floated inverted green button" href="/blogs/<%= blog._id %>"><span id="insideBtn">Read More</span><i class="right chevron icon"></i></a>
+                        </div>
                     </div>
                     <div class="header" >
                         <a href="/blogs/<%= blog._id %>"> <%= blog.title %></a>
@@ -16,9 +19,6 @@
                         </div>
                         <div class="description">
                             <p><%- blog.body.substring(0, 100)%>...</p>
-                        </div>
-                        <div class="extra">
-                            <a class="ui floated inverted green button" href="/blogs/<%= blog._id %>">Read More <i class="right chevron icon"></i></a>
                         </div>
                     </div>
                 </div>

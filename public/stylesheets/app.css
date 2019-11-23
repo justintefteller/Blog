@@ -9,3 +9,10 @@ i.icon {
 #deleteBtn {
     display: inline;
 }
+
+i.chevron {
+    padding-top: 6px;
+}
+#insideBtn {
+    text-align: center;
+}

@@ -32,11 +32,11 @@ const blogSchema = new mongoose.Schema({
 
 const Blog = mongoose.model("Blog", blogSchema);
 
-Blog.create({
-    title: "Test Blog",
-    image: "https://images.unsplash.com/photo-1564223288351-a96bea22b5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    body: "This is a sexy photo",
-});
+// Blog.create({
+//     title: "Test Blog",
+//     image: "https://images.unsplash.com/photo-1564223288351-a96bea22b5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+//     body: "This is a sexy photo",
+// });
 
 app.get("/", function(req, res){
     res.redirect("/blogs");
